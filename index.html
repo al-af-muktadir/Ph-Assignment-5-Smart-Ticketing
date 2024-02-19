@@ -53,13 +53,20 @@
         </nav>
     </header>
     <main >
-        <section id="banner-section"  class="max-w-[1171px] mx-auto border-2 h-[550px] flex justify-center items-center">
+        <section id="banner-section"  class="max-w-[1171px] mx-auto  h-[550px] flex flex-col items-center justify-center">
           
-<div class="flex flex-col justify-center items-center text-[64px] font-bold">
-  <h3 class="text-white">End-to-End Travel With</h3>
-  <h3 class="text-[#1DD100]">P-Paribahan</h3>
-  <h1 class="text-sm text-white text-center my-4">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</h1>
-  <a href="#scrolled"><button class="btn bg-[#1DD100] border-none font-semibold">Buy Tickets</button></a>
+<div class="flex justify-center  mx-auto">
+  <div class="flex flex-col  items-center text-5xl font-bold  text-center">
+    <h3 class="text-white">End-to-End Travel With</h3>
+    <h3 class="text-[#1DD100]">P-Paribahan</h3>
+    <h1 class="text-sm text-white text-center my-4">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</h1>
+    <a href="#scrolled"><button class="btn bg-[#1DD100] border-none font-semibold">Buy Tickets</button></a>
+  </div>
+</div>
+<div class="  flex justify-center  gap-7 translate-y-36 -translate-x-10">
+  <div class="bg-white rounded-xl border-b-4 border-b-green-400 flex w-60 px-5 py-3 justify-between items-center"><div><img src="people.png" alt=""></div><div class="text-3xl">500K+ <p class="text-sm font-thin">Registered Users</p></div></div>
+  <div class="bg-white rounded-xl border-b-4 border-b-green-400 flex w-60 px-5 py-3 justify-between items-center"><div><img src="ticket-cupon.png" alt=""></div><div class="text-3xl">1.7 Lakhs <p class="text-sm font-thin">Tickets sold</p></div></div>
+  <div class="bg-white rounded-xl border-b-4 border-b-green-400 flex w-60 px-5 py-3 justify-between items-center"><div><img src="stoppage.png" alt=""></div><div class="text-3xl">80K+<p class="text-sm font-thin">Rental Partners</p></div></div>
 </div>
   </section>
   <section id="coupon" class="max-w-[1171px] mx-auto mt-16">
@@ -225,7 +232,7 @@
     </div>
   <div class="ml-4">
     <h3 class="pb-4  border-b-4 border-dotted text-2xl">Select Your Seat</h3>
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto mt-5">
       <table class="table">
         <!-- head -->
         <thead>
@@ -240,11 +247,11 @@
         </tbody>
       </table>
     </div>
-    <div class="flex justify-between border-t-4">
+    <div class="flex justify-between border-t-4 my-5 pt-3">
       <div><p>total Price</p></div>
      <div id="counting-sum">0</div>
     </div>
-    <div class="flex items-center gap-4"> 
+    <div class="flex items-center gap-4 mb-4"> 
      <input type="text" name="" id="coupon-text" placeholder="Have Any Coupon?" class="bg-gray-200 rounded-lg px-6 py-4" required>
      <button onclick="discountGrandTotal()" id="apply-coupon" class="btn bg-green-400" disabled>Apply</button>
     </div>
@@ -255,14 +262,14 @@
 
 
     <div class="mt-5">
-      <p>Passengar name*</p>
+      <p class="mb-3">Passengar name*</p>
       <input type="text" name="" id="" placeholder="Enter Your Name" class="w-full py-3 pl-3 bg-gray-100 rounded-lg mb-4" >
 
-      <p> Phone Number*</p>
+      <p class="mb-3"> Phone Number*</p>
       <input type="text" name="" id="Phone" placeholder="Enter Phone Number" class="w-full py-3 pl-3 bg-gray-100 rounded-lg"  required>
-      <p>Email Id</p>
-      <input type="email" name="" id="" placeholder="Enter Email" class="w-full py-3 pl-3 bg-gray-100 rounded-lg" >
-<button onclick="Success()" id="Next" class="bg-green-400 w-full mt-5 rounded-lg text-white py-3 pl-3 mb-4" disabled>Next</button>
+      <p class="mb-3">Email Id</p>
+      <input  type="email" name="" id="" placeholder="Enter Email" class="w-full py-3 pl-3 bg-gray-100 rounded-lg mb-6" >
+<button onclick="Success()" id="Next" class= " bg-green-400 w-full mt-5 rounded-lg text-white py-3 pl-3 mb-4" disabled>Next</button>
 <div class="flex justify-center gap-5">
   <div class="underline text-sm font-thin">Terms And conditions</div>
 <div class="underline text-sm font-thin">Cancelation Policy</div>
