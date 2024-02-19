@@ -102,6 +102,7 @@ document.getElementById("coupon-text").addEventListener("keyup",function(event){
 
   
  })
+ let discount,Money,div1,div2;
 function discountGrandTotal(){
     let tempTotal,GrandFinal,grandSumId;
     if(text==='NEW15' ){
@@ -110,12 +111,30 @@ function discountGrandTotal(){
          GrandFinal=tempTotal-tempTotal*(15/100);
        grandSumId=document.getElementById("grand-total");
         grandSumId.innerText=GrandFinal;
+        
+         discount =tempTotal-GrandFinal;
+         Money=document.getElementById("money");
+div1=document.createElement("div");
+div2=document.createElement("div");
+div1.innerText="Discount";
+div2.innerText=discount;
+Money.appendChild(div1);
+Money.appendChild(div2);
     }
     else if(text==='Couple 20'){
          tempTotal=sum;
         GrandFinal=tempTotal-tempTotal*(20/100);
          grandSumId=document.getElementById("grand-total");
         grandSumId.innerText=GrandFinal;
+        discount =tempTotal-GrandFinal;
+        Money=document.getElementById("money");
+        div1=document.createElement("div");
+        div2=document.createElement("div");
+        div1.innerText="Discount"
+        div2.innerText=discount;
+        Money.appendChild(div1);
+        Money.appendChild(div2);
+
     }
     else{
         alert("Wrong Coupon Code");
@@ -123,7 +142,6 @@ function discountGrandTotal(){
     }
 
 }
-function discountGrandTotal2(){
-    
-    }
-
+document.getElementById("continue").addEventListener("click",function(){
+    window.location.reload();
+})
